@@ -53,8 +53,8 @@ const character = 'lachancla';
         newCharacter.save().then(character => {
             response.send(character);
 
-        })
-    })
+        });
+    });
 
     //On récupère un argument pour définir le port, sinon port par défaut :
 const port = argv._[0];
