@@ -1,6 +1,6 @@
 const { mongoose } = require("../database/db");
 
-const HouseSchema = new mongoose.Schema(
+const PlaceSchema = new mongoose.Schema(
   {
     _id: {
       type: Number,
@@ -10,32 +10,21 @@ const HouseSchema = new mongoose.Schema(
       type: String,
       required: true
     },
-    sigil: {
+    type: {
       type: String,
       required: true
     },
-    words: {
+    location: {
       type: String,
       required: true
     },
-    seat: {
-      type: String,
-      required: true
-    },
-    region: {
-      type: String,
-      required: true
-    },
-    vassals: {
-      type: Array
-    },
-    founder: {
+    rulers: {
       type: String
     }
   },
   { versionKey: false }
 );
 
-const House = mongoose.model("House", HouseSchema);
+const Place = mongoose.model("Place", PlaceSchema);
 
 module.exports = House;
