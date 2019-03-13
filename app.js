@@ -11,9 +11,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // import routes
-app.use("/character", require("./routes/characters"));
-app.use("/house", require("./routes/houses"));
-app.use("/place", require("./routes/places"));
+app.use("/api/character", require("./routes/characters"));
+app.use("/api/house", require("./routes/houses"));
+app.use("/api/place", require("./routes/places"));
 
 const port =
   typeof argv.port === "number" &&
