@@ -1,0 +1,232 @@
+[
+    {
+        "_id": 1,
+        "quote": "The powerful have always preyed on the powerless. That's how they became powerful in the first place.",
+        "from": "Tyrion Lannister",
+        "to": "",
+        "season": 5,
+        "episode": 2
+    },
+    {
+        "_id": 2,
+        "quote": "If you ever call me 'sister' again, I'll have you strangled in your sleep.",
+        "from": "Cersei Lannister",
+        "to": "Margaery Tyrell",
+        "season": 3,
+        "episode": 8
+    },
+    {
+        "_id": 3,
+        "quote": "Stick 'em with the pointy end.",
+        "from": "Jon Snow",
+        "to": "Arya Stark",
+        "season": 1,
+        "episode": 2
+    },
+    {
+        "_id": 4,
+        "quote": "Let me give you some advice, bastard. Never forget what you are. The rest of the world will not. Wear it like armor, and it can never be used to hurt you.",
+        "from": "Tyrion Lannister",
+        "to": "Jon Snow",
+        "season": 1,
+        "episode": 1
+    },
+    {
+        "_id": 5,
+        "quote": "That's what I do. I drink and I know things.",
+        "from": "Tyrion Lannister",
+        "to": "",
+        "season": 6,
+        "episode": 2
+    },
+    {
+        "_id": 6,
+        "quote": "A lion doesn't concern himself with the opinions of a sheep.",
+        "from": "Tywin Lannister",
+        "to": "",
+        "season": 1,
+        "episode": 7
+    },
+    {
+        "_id": 7,
+        "quote": "Power resides where men believe it resides. It's a trick. A shadow on the wall. And a very small man can cast a very large shadow.",
+        "from": "Lord Varys",
+        "to": "",
+        "season": 2,
+        "episode": 3
+    },
+    {
+        "_id": 8,
+        "quote": "The next time you raise a hand to me will be the last time you have hands.",
+        "from": "Daenerys Targaryen",
+        "to": "Viserys Targaryen",
+        "season": 1,
+        "episode": 4
+    },
+    {
+        "_id": 9,
+        "quote": "It's easy to confuse 'what is' with 'what ought to be', especially when 'what is' has worked out in your favor.",
+        "from": "Tyrion Lannister",
+        "to": "",
+        "season": 5,
+        "episode": 9
+    },
+    {
+        "_id": 10,
+        "quote": "Chaos isn't a pit. Chaos is a ladder. Many who try to climb it fail, and never get to try again. The fall breaks them. And some are given a chance to climb; they cling to the real or the gods or love. Only the ladder is real. The climb is all there is.",
+        "from": "Petyr Baelish",
+        "to": "",
+        "season": 3,
+        "episode": 6
+    },
+    {
+        "_id": 11,
+        "quote": "When you play the game of thrones, you win or you die.",
+        "from": "Cersei Lannister",
+        "to": "",
+        "season": 1,
+        "episode": 7
+    },
+    {
+        "_id": 12,
+        "quote": "In the name of Renly of House Baratheon, First of His Name, Rightful King of the Andals and the First Men, Lord of the Seven Kingdoms and Protector of the Realm, I, Brienne of Tarth, sentence you to die.",
+        "from": "Brienne of Tarth",
+        "to": "Stannis Baratheon",
+        "season": 5,
+        "episode": 10
+    },
+    {
+        "_id": 13,
+        "quote": "If you think this has a happy ending, you haven't been paying attention.",
+        "from": "Ramsay Bolton",
+        "to": "",
+        "season": 3,
+        "episode": 6
+    },
+    {
+        "_id": 14,
+        "quote": "Winter is coming.",
+        "from": "Ned Stark",
+        "to": "",
+        "season": 1,
+        "episode": 1
+    },
+    {
+        "_id": 15,
+        "quote": "A mind needs books like a sword needs a whetstone. That's why I read so much.",
+        "from": "Tyrion Lannister",
+        "to": "",
+        "season": 1,
+        "episode": 2
+    },
+    {
+        "_id": 16,
+        "quote": "You know nothing, Jon Snow.",
+        "from": "Ygritte",
+        "to": "Jon Snow",
+        "season": 4,
+        "episode": 9
+    },
+    {
+        "_id": 17,
+        "quote": "The things I do for love.",
+        "from": "Jaime Lannister",
+        "to": "",
+        "season": 1,
+        "episode": 1
+    },
+    {
+        "_id": 18,
+        "quote": "The night is dark and full of terrors.",
+        "from": "Melisandre of Asshai",
+        "to": "",
+        "season": 2,
+        "episode": 9
+    },
+    {
+        "_id": 19,
+        "quote": "I think mothers and fathers made up the gods because they wanted their children to sleep through the night.",
+        "from": "Davos Seaworth",
+        "to": "",
+        "season": 3,
+        "episode": 8
+    },
+    {
+        "_id": 20,
+        "quote": "There is only one god and his name is Death, and there is only one thing we say to Death: 'Not today.",
+        "from": "Syrio Forel",
+        "to": "Arya Stark",
+        "season": 1,
+        "episode": 6
+    },
+    
+    {
+        "_id": 21,
+        "quote": "You're going to die tomorrow, Lord Bolton. Sleep well.",
+        "from": "Sansa Stark",
+        "to": "Ramsay Bolton",
+        "season": 6,
+        "episode": 9
+    },
+    {
+        "_id": 22,
+        "quote": "Happy shitting.",
+        "from": "Tormund Giantsbane",
+        "to": "Davos Seaworth",
+        "season": 6,
+        "episode": 9
+    },
+    {
+        "_id": 23,
+        "quote": "Hodor.",
+        "from": "Hodor",
+        "to": "Hodor",
+        "season": 1,
+        "episode": 1
+    },
+    {
+        "_id": 24,
+        "quote": "Thank you for all your many lessons, Lord Baelish. I will never forget them.",
+        "from": "Sansa Stark",
+        "to": "Petyr Baelish",
+        "season": 1,
+        "episode": 1
+    },
+    {
+        "_id": 25,
+        "quote": "Burn them all!",
+        "from": "Aerys II Targaryen",
+        "to": "",
+        "season": 6,
+        "episode": 6
+    },
+    {
+        "_id": 26,
+        "quote": "There's no cure for being a cunt.",
+        "from": "Bronn",
+        "to": "",
+        "season": 2,
+        "episode": 4
+    },
+    {
+        "_id": 27,
+        "quote": "We have 200,000 reasons to take the city",
+        "from": "Daenerys Targaryen",
+        "to": "",
+        "season": 3,
+        "episode": 7
+    },
+    {
+        "_id": 28,
+        "quote": "He was no dragon. Fire cannot kill a dragon.",
+        "from": "Daenerys Targaryen",
+        "to": "",
+        "season": 1,
+        "episode": 6
+    }
+    
+    
+
+
+
+]
