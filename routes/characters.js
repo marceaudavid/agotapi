@@ -21,8 +21,8 @@ router.get("/:id", (req, res) => {
 
 // Create one character :
 router.post("/", (req, res) => {
-  const character = new Character(req.body);
-  Character.save()
+  const character = new Character(req.body)
+    .save()
     .then(character => res.send(character))
     .catch(err => res.sendStatus(500));
 });
@@ -36,7 +36,7 @@ router.put("/:id", (req, res) => {
 
 // Delete one character:
 router.delete("/:id", (req, res) => {
-  Character.deleteOne({ _id: request.params.id })
+  Character.deleteOne({ _id: req.params.id })
     .then(character => res.status(200).json(character))
     .catch(err => res.sendStatus(500));
 });
