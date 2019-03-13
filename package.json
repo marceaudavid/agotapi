@@ -12,7 +12,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "pop": "node database/populate.js"
   },
   "repository": {
     "type": "git",
