@@ -12,7 +12,14 @@ app.use(express.json());
 
 // import routes
 app.use("/character", require("./routes/characters"));
+app.use("/house", require("./routes/houses"));
+app.use("/place", require("./routes/places"));
 
-const port = typeof argv.port === "number" && Number.isInteger(argv.port) && (argv.port >= 0 && argv.port <= 65536) ? argv.port : 3000;
+const port =
+  typeof argv.port === "number" &&
+  Number.isInteger(argv.port) &&
+  (argv.port >= 0 && argv.port <= 65536)
+    ? argv.port
+    : 3000;
 
 app.listen(port, () => console.log(`Listening on Port ${port}!`));
