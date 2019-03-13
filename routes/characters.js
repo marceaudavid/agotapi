@@ -3,17 +3,19 @@ const router = express.Router();
 
 const Character = require("../models/character");
 
+const Dao = require("../database/dao");
+
 // Get all characters :
 router.get("/", (req, res) => {
-  Character.find()
-    .then(character => res.status(200).json(character))
+  Dao.getAll(Character)
+    .then(character => res.json(character))
     .catch(err => res.sendStatus(500));
 });
 
 // Get one character :
 router.get("/:id", (req, res) => {
   Character.findOne({ _id: req.params.id })
-    .then(character => res.status(200).json(todo))
+    .then(character => res.status(200).json(character))
     .catch(err => res.sendStatus(500));
 });
 
