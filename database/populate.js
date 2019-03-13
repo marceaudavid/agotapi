@@ -1,10 +1,16 @@
-const { mongoose } = require("./db");
-const db = require("./db");
 const fs = require("fs");
-const Character = require("../models/character");
 
-fs.readFile("./database/characters.json", (error, data) => {
+const db = require("./db");
+const { mongoose } = require("./db");
+
+const Character = require("../models/character");
+const House = require("../models/house");
+const Place = require("../models/place");
+
+fs.readFile("./database/places.json", (error, data) => {
   if (error) console.log(error);
   db.connect();
-  Character.insertMany(JSON.parse(data)).then(char => console.log(char));
+  Place.insertMany(JSON.parse(data))
+    .then(place => console.log(place))
+    .catch(err => console.log(err));
 });
