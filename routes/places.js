@@ -14,7 +14,7 @@ router.get("/", (req, res) => {
 
 // Get one place :
 router.get("/:id", (req, res) => {
-  Dao.findOneDocument(Place, req.params.id)
+  Dao.getOneDocument(Place, req.params.id)
     .then(place => res.status(200).json(place))
     .catch(err => res.sendStatus(500));
 });
