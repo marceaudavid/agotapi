@@ -28,14 +28,14 @@ router.post("/", (req, res) => {
 
 // Update one character :
 router.put("/:id", (req, res) => {
-  Character.updateOneDocument(Character, req.params.id, req.body)
+  Dao.updateOneDocument(Character, req.params.id, req.body)
     .then(character => res.status(200).json(character))
     .catch(err => res.sendStatus(500));
 });
 
 // Delete one character:
 router.delete("/:id", (req, res) => {
-  Character.deleteOneDocument(Character, req.params.id)
+  Dao.deleteOneDocument(Character, req.params.id)
     .then(character => res.status(200).json(character))
     .catch(err => res.sendStatus(500));
 });
