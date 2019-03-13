@@ -4,8 +4,15 @@ const argv = yargs.argv;
 const express = require("express");
 const app = express();
 
-const db = require("./database/db");
-db.connect();
+const db = require("./mongo/db");
+
+db.connect((success, err) => {
+  if (success) {
+    console.log(success);
+  } else {
+    console.log(err);
+  }
+});
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

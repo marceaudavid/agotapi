@@ -3,7 +3,7 @@ const router = express.Router();
 
 const Character = require("../models/character");
 
-const Dao = require("../database/dao");
+const Dao = require("../mongo/dao");
 
 // Get all characters :
 router.get("/", (req, res) => {

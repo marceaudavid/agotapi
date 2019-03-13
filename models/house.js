@@ -1,4 +1,4 @@
-const { mongoose } = require("../database/db");
+const { mongoose } = require("../mongo/db");
 
 const HouseSchema = new mongoose.Schema(
   {
