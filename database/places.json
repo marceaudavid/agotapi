@@ -1,0 +1,191 @@
+[
+  {
+    "_id": "1",
+    "name": "Winterfell",
+    "type": "Castle",
+    "location": "The North",
+    "rulers": "House Stark"
+  },
+  {
+    "_id": "2",
+    "name": "White Harbor",
+    "type": "City",
+    "location": "The North",
+    "rulers": "House Manderly"
+  },
+  {
+    "_id": "3",
+    "name": "Castle Black",
+    "type": "Castle",
+    "location": "The Wall",
+    "rulers": "Night's Watch"
+  },
+  {
+    "_id": "4",
+    "name": "King's Landing",
+    "type": "City",
+    "location": "The Crownlands",
+    "rulers": "House Targaryen"
+  },
+  {
+    "_id": "5",
+    "name": "Casterly Rock",
+    "type": "Castle",
+    "location": "The Westernlands",
+    "rulers": "House Lannister"
+  },
+  {
+    "_id": "6",
+    "name": "Lannisport",
+    "type": "City",
+    "location": "The Westerlands",
+    "rulers": "House Lannister of Lannisport"
+  },
+  {
+    "_id": "7",
+    "name": "Highgarden",
+    "type": "Castle",
+    "location": "The Reach",
+    "rulers": "House Tyrell"
+  },
+  {
+    "_id": "7",
+    "name": "Oldtown",
+    "type": "City",
+    "location": "The Reach",
+    "rulers": "House Hightower"
+  },
+  {
+    "_id": "8",
+    "name": "Riverrun",
+    "type": "Castle",
+    "location": "The Riverlands",
+    "rulers": "House Tully"
+  },
+  {
+    "_id": "9",
+    "name": "Harrenhal",
+    "type": "Castle",
+    "location": "The Riverlands",
+    "rulers": ""
+  },
+  {
+    "_id": "10",
+    "name": "Sunspear",
+    "type": "Castle",
+    "location": "Dorne",
+    "rulers": "House Martell"
+  },
+  {
+    "_id": "11",
+    "name": "Water Gardens",
+    "type": "Palace",
+    "location": "Dorne",
+    "rulers": "House Martell"
+  },
+  {
+    "_id": "12",
+    "name": "The Eyrie",
+    "type": "Castle",
+    "location": "The Vale",
+    "rulers": "House Arryn"
+  },
+  {
+    "_id": "13",
+    "name": "Storm's End",
+    "type": "Castle",
+    "location": "The Stormlands",
+    "rulers": "House Baratheon"
+  },
+  {
+    "_id": "14",
+    "name": "Braavos",
+    "type": "City-State",
+    "location": "Essos",
+    "rulers": "Sealord of Braavos"
+  },
+  {
+    "_id": "15",
+    "name": "Lorath",
+    "type": "City-State",
+    "location": "Essos",
+    "rulers": "Lorathi"
+  },
+  {
+    "_id": "16",
+    "name": "Lys",
+    "type": "City-State",
+    "location": "Essos",
+    "rulers": "Lysene"
+  },
+  {
+    "_id": "17",
+    "name": "Myr",
+    "type": "City-State",
+    "location": "Essos",
+    "rulers": "Magisters"
+  },
+  {
+    "_id": "18",
+    "name": "Norvos",
+    "type": "City-State",
+    "location": "Essos",
+    "rulers": "Bearded Priests of Norvos"
+  },
+  {
+    "_id": "19",
+    "name": "Pentos",
+    "type": "City-State",
+    "location": "Essos",
+    "rulers": "Prince of Pentos"
+  },
+  {
+    "_id": "20",
+    "name": "Qohor",
+    "type": "City-State",
+    "location": "Essos",
+    "rulers": "Qohorik"
+  },
+  {
+    "_id": "21",
+    "name": "Tyrosh",
+    "type": "City-State",
+    "location": "Essos",
+    "rulers": "Archon"
+  },
+  {
+    "_id": "22",
+    "name": "Volantis",
+    "type": "City-State",
+    "location": "Essos",
+    "rulers": "Triarchs"
+  },
+  {
+    "_id": "22",
+    "name": "Qarth",
+    "type": "City-State",
+    "location": "Jade Sea",
+    "rulers": "The Thirteen"
+  },
+  {
+    "_id": "23",
+    "name": "Astapor",
+    "type": "City-State",
+    "location": "Slaver's Bay",
+    "rulers": "Good Masters"
+  },
+  {
+    "_id": "23",
+    "name": "Yunkai",
+    "type": "City-State",
+    "location": "Slaver's Bay",
+    "rulers": "Wise Masters"
+  },
+  {
+    "_id": "24",
+    "name": "Meereen",
+    "type": "City-State",
+    "location": "Slaver's Bay",
+    "rulers": "Great Masters"
+  }
+]

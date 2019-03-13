@@ -1,8 +1,11 @@
-const { mongoose } = require("./db");
-const db = require("./db");
 const fs = require("fs");
+
+const db = require("./db");
+const { mongoose } = require("./db");
+
 const Character = require("../models/character");
-const Houses = require("../models/house");
+const House = require("../models/house");
+const Place = require("../models/house");
 
 fs.readFile("./database/characters.json", (error, data) => {
   if (error) console.log(error);
@@ -10,11 +13,20 @@ fs.readFile("./database/characters.json", (error, data) => {
   Character.insertMany(JSON.parse(data))
     .then(char => console.log(char))
     .catch(err => console.log(err));
-  fs.readFile("./database/houses.json", (error, data) => {
-    if (error) console.log(error);
-    db.connect();
-    Houses.insertMany(JSON.parse(data))
-      .then(house => console.log(house))
-      .catch(err => console.log(err));
-  });
+});
+
+fs.readFile("./database/houses.json", (error, data) => {
+  if (error) console.log(error);
+  db.connect();
+  House.insertMany(JSON.parse(data))
+    .then(house => console.log(house))
+    .catch(err => console.log(err));
+});
+
+fs.readFile("./database/places.json", (error, data) => {
+  if (error) console.log(error);
+  db.connect();
+  Place.insertMany(JSON.parse(data))
+    .then(place => console.log(place))
+    .catch(err => console.log(err));
 });
