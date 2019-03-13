@@ -1,10 +1,13 @@
 const mongoose = require("mongoose");
 
 const connect = () => {
-  mongoose.connect(
-    "mongodb+srv://admin:root@sandbox-3mubc.mongodb.net/api?retryWrites=true",
-    { useNewUrlParser: true }
-  );
+  mongoose.Promise = global.Promise;
+  mongoose
+    .connect(
+      "mongodb+srv://admin:root@sandbox-3mubc.mongodb.net/api?retryWrites=true",
+      { useNewUrlParser: true }
+    )
+    .then(() => console.log("Database Connected"));
 };
 
 module.exports = {
