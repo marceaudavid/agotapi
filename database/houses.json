@@ -56,7 +56,16 @@
     "words": "Fire and Blood",
     "seat": "King's Landing",
     "region": "The Crownlands",
-    "vassals": ["House Lannister", "House Stark", "House Baratheon", "House Greyjoy", "House Martell", "House Tully", "House Tyrell", "House Arryn"],
+    "vassals": [
+      "House Lannister",
+      "House Stark",
+      "House Baratheon",
+      "House Greyjoy",
+      "House Martell",
+      "House Tully",
+      "House Tyrell",
+      "House Arryn"
+    ],
     "founder": "Aegon The Conqueror"
   },
   {
@@ -91,7 +100,16 @@
     "words": "Growing Strong",
     "seat": "Highgarden",
     "region": "The Reach",
-    "vassals": ["House Tarly", "House Hightower", "House Florent", "House Merryweather", "House Fossoway", "House Rowan", "House Redwyne", "House Oakheart"],
+    "vassals": [
+      "House Tarly",
+      "House Hightower",
+      "House Florent",
+      "House Merryweather",
+      "House Fossoway",
+      "House Rowan",
+      "House Redwyne",
+      "House Oakheart"
+    ],
     "founder": "Alester Tyrell"
   },
   {
@@ -101,7 +119,16 @@
     "words": "We Do Not Sow",
     "seat": "Pyke",
     "region": "The Iron Islands",
-    "vassals": ["House Blacktyde", "House Botley", "House Drumm", "House Goodbrother", "House Harlaw", "House Merlyn", "House Sparr", "House Humble"],
+    "vassals": [
+      "House Blacktyde",
+      "House Botley",
+      "House Drumm",
+      "House Goodbrother",
+      "House Harlaw",
+      "House Merlyn",
+      "House Sparr",
+      "House Humble"
+    ],
     "founder": "The Grey King"
   },
   {
@@ -111,7 +138,16 @@
     "words": "Family, Duty, Honor",
     "seat": "Riverrun",
     "region": "The Riverlands",
-    "vassals": ["House Frey", "House Bracken", "House Mallister", "House Whent", "House Blackwood", "House Mooton", "House Smallwood", "House Darry"],
+    "vassals": [
+      "House Frey",
+      "House Bracken",
+      "House Mallister",
+      "House Whent",
+      "House Blackwood",
+      "House Mooton",
+      "House Smallwood",
+      "House Darry"
+    ],
     "founder": "Axel Tully"
   },
   {
@@ -135,5 +171,84 @@
       "House Yronwood"
     ],
     "founder": "Mors Martell"
+  },
+  {
+    "_id": 9,
+    "name": "Arryn",
+    "sigil": "A white falcon volant and crescent moon on a blue field",
+    "words": "As High as Honor",
+    "seat": "The Eyrie",
+    "region": "The Vale of Arryn",
+    "vassals": [
+      "House Royce",
+      "House Egen",
+      "House Waynwood",
+      "House Corbray",
+      "House Hunter",
+      "House Lynderly",
+      "House Templeton",
+      "House Baelish"
+    ],
+    "founder": "Artys Arryn"
+  },
+  {
+    "_id": 10,
+    "name": "Bolton",
+    "sigil": "A red flayed man, hanging upside-down on a white X-shaped cross, on a black background",
+    "words": "Our Blades Are Sharp",
+    "seat": "The Dreadfort",
+    "region": "The North",
+    "vassals": [],
+    "founder": ""
+  },
+  {
+    "_id": 11,
+    "name": "Frey",
+    "sigil": "The two stone grey towers and bridge of the Twins, on a dark grey field, surmounting an escutcheon of blue water",
+    "words": "We Stand Together",
+    "seat": "The Twins",
+    "region": "The Riverlands",
+    "vassals": ["House Erenford", "House Haigh"],
+    "founder": ""
+  },
+  {
+    "_id": 12,
+    "name": "Redwyne",
+    "sigil": "A burgundy grape cluster on a white field",
+    "words": "Ripe for Victory",
+    "seat": "The Arbor",
+    "region": "The Reach",
+    "vassals": [],
+    "founder": ""
+  },
+  {
+    "_id": 13,
+    "name": "Hightower",
+    "sigil": "A stone white watchtower, with a fire on the top, on a grey field",
+    "words": "We Light the Way",
+    "seat": "The Hightower",
+    "region": "The Reach",
+    "vassals": ["House Cuy", "House Bulwer", "House Beesbury"],
+    "founder": ""
+  },
+  {
+    "_id": 14,
+    "name": "Karstark",
+    "sigil": "A white sunburst on black",
+    "words": "The Sun of Winter",
+    "seat": "Karhold",
+    "region": "The North",
+    "vassals": [],
+    "founder": "Karlon Stark"
+  },
+  {
+    "_id": 15,
+    "name": "Mormont",
+    "sigil": "A rampant black bear on a white field, surrounded by a green escutcheon",
+    "words": "Here We Stand",
+    "seat": "Bear Island",
+    "region": "The North",
+    "vassals": [],
+    "founder": ""
   }
 ]
