@@ -35,7 +35,7 @@ router.put("/:id", (req, res) => {
 
 // Delete one place:
 router.delete("/:id", (req, res) => {
-  Dao.deleteOneDocument(House, req.params.id)
+  Dao.deleteOneDocument(Place, req.params.id)
     .then(place => res.status(200).json(place))
     .catch(err => res.sendStatus(500));
 });

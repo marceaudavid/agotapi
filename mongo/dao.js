@@ -23,32 +23,38 @@ const getOneDocument = (collection, id) => {
 // Add a document to the collection :
 const addOneDocument = (collection, body) => {
   return new Promise((resolve, reject) => {
-    const item = new collection(body).save()
-    .then(item => res.send(item))
-    .catch(err => res.sendStatus(500));
-  })
+    const item = new collection(body)
+      .save()
+      .then(item => resolve(item))
+      .catch(err => reject(err));
+  });
 };
 
 // Update a document :
 const updateOneDocument = (collection, id, body) => {
   return new Promise((resolve, reject) =>
-  collection.updateOne({
-    _id: id
-  }, body )
-  .then(item => resolve(item))
-  .catch(err => reject(err))
-  )
+    collection
+      .updateOne(
+        {
+          _id: id
+        },
+        body
+      )
+      .then(item => resolve(item))
+      .catch(err => reject(err))
+  );
 };
 
 // Delete a document :
 const deleteOneDocument = (collection, id) => {
   return new Promise((resolve, reject) =>
-  collection.deleteOne({
-    _id: id
-  })
-  .then(item => resolve(item))
-  .catch(err => reject(err))
-  )
+    collection
+      .deleteOne({
+        _id: id
+      })
+      .then(item => resolve(item))
+      .catch(err => reject(err))
+  );
 };
 
 module.exports = {
