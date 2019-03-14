@@ -223,7 +223,106 @@
     "to": "",
     "season": 1,
     "episode": 6
+  },
+  {
+    "_id": 29,
+    "quote": "I believe in second chances. I don’t believe in third chances.",
+    "from": "Doran Marthell",
+    "to": "Ellaria Sand",
+    "season": 5,
+    "episode": 9
+  },
+  {
+    "_id": 30,
+    "quote": "I killed a white walker, I killed a Thenn. I’ll take my chances with you.",
+    "from": "Samwell Tarly",
+    "to": "",
+    "season": 5,
+    "episode": 7
+  },
+  {
+    "_id": 31,
+    "quote": "Look at me. Look at my face; it’s the last thing you’ll see before you die.",
+    "from": "Cersei Lannister",
+    "to": "Septa Unella",
+    "season": 5,
+    "episode": 7
+  },
+  {
+    "_id": 32,
+    "quote": "If I give everyone what they deserve I’ll have no one left to rule.",
+    "from": "Daenerys Targaryen",
+    "to": "",
+    "season": 5,
+    "episode": 5
+  },
+  {
+    "_id": 33,
+    "quote": "I’ve had an exciting life. I want my death to be boring.",
+    "from": "Bronn",
+    "to": "Jaime Lannister",
+    "season": 5,
+    "episode": 4
+  },
+  {
+    "_id": 34,
+    "quote": "Welcome home, Lady Stark. The North remembers.",
+    "from": "A lady from the north",
+    "to": "Sansa Stark",
+    "season": 5,
+    "episode": 3
+  },
+  {
+    "_id": 35,
+    "quote": "I am your son. I have always been your son.",
+    "from": "Tyrion Lannister",
+    "to": "Tywin Lannister",
+    "season": 5,
+    "episode": 3
+  },
+  {
+    "_id": 36,
+    "quote": "Those are giants riding mammoths down there!",
+    "from": "Jon Snow",
+    "to": "Janos Slynt",
+    "season": 4,
+    "episode": 10
+  },
+  {
+    "_id": 37,
+    "quote": "Do you remember that cave? We should’ve stayed in that cave.",
+    "from": "Ygritte",
+    "to": "Jon Snow",
+    "season": 4,
+    "episode": 9
+  },
+  {
+    "_id": 38,
+    "quote": "They can live in my new world, or they can die in their old one.",
+    "from": "Daenerys Targaryen",
+    "to": "",
+    "season": 4,
+    "episode": 7
+  },
+  {
+    "_id": 39,
+    "quote": "Sadly, my lord, I never forget a thing.",
+    "from": "Lord Varys",
+    "to": "",
+    "season": 4,
+    "episode": 6
   }
+
+  
+  
+  
+ 
+
+
+
+  
+
+
 
 
 
