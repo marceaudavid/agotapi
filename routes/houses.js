@@ -3,7 +3,7 @@ const router = express.Router();
 
 const House = require("../models/house");
 
-const Dao = require("../database/dao");
+const Dao = require("../mongo/dao");
 
 // Get all houses :
 router.get("/", (req, res) => {

@@ -1,4 +1,4 @@
-const { mongoose } = require("../database/db");
+const { mongoose } = require("../mongo/db");
 
 const QuoteSchema = new mongoose.Schema(
   {
@@ -25,8 +25,8 @@ const QuoteSchema = new mongoose.Schema(
       type: Number,
       required: true
     }
-},
-{ versionKey: false }
+  },
+  { versionKey: false }
 );
 
 const Quote = mongoose.model("Quote", QuoteSchema);

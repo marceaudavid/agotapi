@@ -1,4 +1,4 @@
-const { mongoose } = require("../database/db");
+const { mongoose } = require("../mongo/db");
 
 const CharacterSchema = new mongoose.Schema(
   {

@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "mongoose": "^5.4.19",
@@ -13,7 +12,7 @@
   "devDependencies": {},
   "scripts": {
     "dev": "nodemon app.js",
-    "pop": "node database/quotes.js"
+    "pop": "node mongo/populate.js"
   },
   "repository": {
     "type": "git",

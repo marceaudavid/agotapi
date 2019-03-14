@@ -3,7 +3,7 @@ const router = express.Router();
 
 const Place = require("../models/place");
 
-const Dao = require("../database/dao");
+const Dao = require("../mongo/dao");
 
 // Get all place :
 router.get("/", (req, res) => {
@@ -21,7 +21,7 @@ router.get("/:id", (req, res) => {
 
 // Add one place :
 router.post("/", (req, res) => {
- Dao.addOneDocument(Place, req.body)
+  Dao.addOneDocument(Place, req.body)
     .then(place => res.send(place))
     .catch(err => res.sendStatus(500));
 });
@@ -35,7 +35,7 @@ router.put("/:id", (req, res) => {
 
 // Delete one place:
 router.delete("/:id", (req, res) => {
-  Dao.deleteOneDocument(House, req.params.id)
+  Dao.deleteOneDocument(Place, req.params.id)
     .then(place => res.status(200).json(place))
     .catch(err => res.sendStatus(500));
 });

@@ -1,4 +1,4 @@
-const { mongoose } = require("../database/db");
+const { mongoose } = require("../mongo/db");
 
 const PlaceSchema = new mongoose.Schema(
   {
