@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 3000
 
-CMD node database/populate.js && node app.js
+CMD npm run pop && npm run start

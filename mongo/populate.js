@@ -8,37 +8,40 @@ const House = require("../models/house");
 const Place = require("../models/place");
 const Quote = require("../models/quote");
 
+// Insert the data in the collections only if the collection is empty
+const insert = (model, file) => {
+  return new Promise((resolve, reject) => {
+    model.countDocuments().then(count => {
+      if (count <= 0) {
+        fs.readFile(`./data/${file}.json`, (error, data) => {
+          if (error) reject(error);
+          model
+            .insertMany(JSON.parse(data))
+            .then(item => resolve(item))
+            .catch(err => reject(err));
+        });
+      } else {
+        resolve(`Collection ${file} is not empty`);
+      }
+    });
+  });
+};
+
+// Exit node when all Promises have been resolved
+async function populate() {
+  await insert(Character, "characters");
+  await insert(House, "houses");
+  await insert(Place, "places");
+  await insert(Quote, "quotes");
+  process.exit();
+}
+
+// Connect to the database and populate it
 db.connect((success, err) => {
   if (err) {
     console.log(err);
   } else {
     console.log(success);
-    fs.readFile("./data/characters.json", (error, data) => {
-      if (error) console.log(error);
-      Character.insertMany(JSON.parse(data))
-        .then(character => console.log(character))
-        .catch(err => console.log(err));
-    });
-
-    fs.readFile("./data/houses.json", (error, data) => {
-      if (error) console.log(error);
-      House.insertMany(JSON.parse(data))
-        .then(house => console.log(house))
-        .catch(err => console.log(err));
-    });
-
-    fs.readFile("./data/places.json", (error, data) => {
-      if (error) console.log(error);
-      Place.insertMany(JSON.parse(data))
-        .then(place => console.log(place))
-        .catch(err => console.log(err));
-    });
-
-    fs.readFile("./data/quotes.json", (error, data) => {
-      if (error) console.log(error);
-      Quote.insertMany(JSON.parse(data))
-        .then(quote => console.log(quote))
-        .catch(err => console.log(err));
-    });
+    populate();
   }
 });
