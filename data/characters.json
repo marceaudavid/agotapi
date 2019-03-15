@@ -571,6 +571,7 @@
   {
     "_id": 25,
     "name": "Joffrey Lannister",
+    "gender": "male",
     "born": "282 AC",
     "origin": "King's Landing",
     "death": "301 AC",
@@ -597,6 +598,7 @@
   {
     "_id": 26,
     "name": "Myrcella Lannister",
+    "gender": "female",
     "born": "283 AC",
     "origin": "King's Landing",
     "death": "302 AC",
@@ -617,6 +619,7 @@
   {
     "_id": 27,
     "name": "Tommen Lannister",
+    "gender": "male",
     "born": "287 AC",
     "origin": "King's Landing",
     "death": "303 AC",
@@ -779,6 +782,7 @@
   {
     "_id": 33,
     "name": "Olenna Tyrell",
+    "gender": "female",
     "born": "?",
     "origin": "The Arbor",
     "death": "304 AC",
@@ -799,6 +803,7 @@
   {
     "_id": 34,
     "name": "Mace Tyrell",
+    "gender": "male",
     "born": "?",
     "origin": "Highgarden",
     "death": "303 AC",
@@ -826,6 +831,7 @@
   {
     "_id": 35,
     "name": "Loras Tyrell",
+    "gender": "male",
     "born": "?",
     "origin": "Highgarden",
     "death": "303 AC",
@@ -846,6 +852,7 @@
   {
     "_id": 36,
     "name": "Margaery Tyrell",
+    "gender": "female",
     "born": "?",
     "origin": "Highgarden",
     "death": "303 AC",
@@ -866,6 +873,7 @@
   {
     "_id": 37,
     "name": "Balon Greyjoy",
+    "gender": "male",
     "born": "",
     "origin": "Pyke",
     "death": "303 AC",
@@ -897,6 +905,7 @@
   {
     "_id": 38,
     "name": "Euron Greyjoy",
+    "gender": "male",
     "born": "",
     "origin": "Pyke",
     "death": "",
@@ -922,6 +931,7 @@
   {
     "_id": 39,
     "name": "Theon Greyjoy",
+    "gender": "male",
     "born": "281 AC",
     "origin": "Pyke",
     "death": "",
@@ -942,6 +952,7 @@
   {
     "_id": 40,
     "name": "Yara Greyjoy",
+    "gender": "female",
     "born": "281 AC",
     "origin": "Pyke",
     "death": "",
@@ -967,6 +978,7 @@
   {
     "_id": 41,
     "name": "Doran Martell",
+    "gender": "male",
     "born": "",
     "origin": "Sunspear",
     "death": "303 AC",
@@ -987,6 +999,7 @@
   {
     "_id": 42,
     "name": "Oberyn Martell",
+    "gender": "male",
     "born": "",
     "origin": "Sunspear",
     "death": "301 AC",
@@ -1016,6 +1029,7 @@
   {
     "_id": 43,
     "name": "Trystane Martell",
+    "gender": "male",
     "born": "",
     "origin": "Sunspear",
     "death": "303 AC",
@@ -1036,6 +1050,7 @@
   {
     "_id": 44,
     "name": "Ellaria Sand",
+    "gender": "female",
     "born": "",
     "origin": "Hellholt",
     "death": "",
@@ -1056,6 +1071,7 @@
   {
     "_id": 45,
     "name": "Obara Sand",
+    "gender": "female",
     "born": "",
     "origin": "Dorne",
     "death": "304 AC",
@@ -1085,6 +1101,7 @@
   {
     "_id": 46,
     "name": "Nymeria Sand",
+    "gender": "female",
     "born": "",
     "origin": "Dorne",
     "death": "304 AC",
@@ -1114,6 +1131,7 @@
   {
     "_id": 47,
     "name": "Tyene Sand",
+    "gender": "female",
     "born": "",
     "origin": "Dorne",
     "death": "304 AC",
@@ -1143,6 +1161,7 @@
   {
     "_id": 48,
     "name": "Randyll Tarly",
+    "gender": "male",
     "born": "",
     "origin": "Horn Hill",
     "death": "304 AC",
@@ -1163,6 +1182,7 @@
   {
     "_id": 49,
     "name": "Dickon Tarly",
+    "gender": "male",
     "born": "",
     "origin": "Horn Hill",
     "death": "304 AC",
@@ -1183,6 +1203,7 @@
   {
     "_id": 50,
     "name": "Samwell Tarly",
+    "gender": "male",
     "born": "280 AC",
     "origin": "Horn Hill",
     "death": "",
@@ -1203,6 +1224,7 @@
   {
     "_id": 51,
     "name": "Jeor Mormont",
+    "gender": "male",
     "born": "280 AC",
     "origin": "Bear Island",
     "death": "300 AC",
@@ -1223,6 +1245,7 @@
   {
     "_id": 52,
     "name": "Jorah Mormont",
+    "gender": "male",
     "born": "280 AC",
     "origin": "Bear Island",
     "death": "",
@@ -1243,6 +1266,7 @@
   {
     "_id": 53,
     "name": "Petyr Baelish",
+    "gender": "male",
     "born": "?",
     "origin": "Baelish Castle",
     "death": "304 AC",
@@ -1267,6 +1291,7 @@
   {
     "_id": 54,
     "name": "Davos Seaworth",
+    "gender": "male",
     "born": "?",
     "origin": "King's Landing",
     "death": "304 AC",
@@ -1287,6 +1312,7 @@
   {
     "_id": 55,
     "name": "Brienne of Tarth",
+    "gender": "female",
     "born": "?",
     "origin": "Evenfall Hall",
     "death": "",
@@ -1307,6 +1333,7 @@
   {
     "_id": 56,
     "name": "Sandor Clegane",
+    "gender": "male",
     "born": "?",
     "origin": "Clegane's Keep",
     "death": "",
@@ -1327,6 +1354,7 @@
   {
     "_id": 57,
     "name": "Varys",
+    "gender": "male",
     "born": "?",
     "origin": "Lys",
     "death": "",
@@ -1347,6 +1375,7 @@
   {
     "_id": 58,
     "name": "Bronn",
+    "gender": "male",
     "born": "?",
     "origin": "?",
     "death": "",
@@ -1367,6 +1396,7 @@
   {
     "_id": 59,
     "name": "Melisandre",
+    "gender": "female",
     "born": "97 AC",
     "origin": "Asshai",
     "death": "",
@@ -1387,6 +1417,7 @@
   {
     "_id": 60,
     "name": "Ramsay Bolton",
+    "gender": "male",
     "born": "?",
     "origin": "The DreadFort",
     "death": "303 AC",
@@ -1412,6 +1443,7 @@
   {
     "_id": 61,
     "name": "Roose Bolton",
+    "gender": "male",
     "born": "?",
     "origin": "The DreadFort",
     "death": "303 AC",
@@ -1437,6 +1469,7 @@
   {
     "_id": 62,
     "name": "Missandei",
+    "gender": "female",
     "born": "?",
     "origin": "Naath",
     "death": "",
@@ -1457,6 +1490,7 @@
   {
     "_id": 63,
     "name": "Grey Worm",
+    "gender": "female",
     "born": "?",
     "origin": "Summer Isles",
     "death": "",
@@ -1477,6 +1511,7 @@
   {
     "_id": 64,
     "name": "Gilly",
+    "gender": "female",
     "born": "?",
     "origin": "Craster's Keep",
     "death": "",
@@ -1497,6 +1532,7 @@
   {
     "_id": 65,
     "name": "Ygritte",
+    "gender": "female",
     "born": "?",
     "origin": "Beyond the Wall",
     "death": "301 AC",
@@ -1517,6 +1553,7 @@
   {
     "_id": 66,
     "name": "Tormund",
+    "gender": "male",
     "born": "?",
     "origin": "Beyond the Wall",
     "death": "",
@@ -1537,6 +1574,7 @@
   {
     "_id": 67,
     "name": "Shae",
+    "gender": "female",
     "born": "276 AC",
     "origin": "Lorath",
     "death": "301 AC",
@@ -1557,6 +1595,7 @@
   {
     "_id": 68,
     "name": "Jaqen H'ghar",
+    "gender": "male",
     "born": "?",
     "origin": "Braavos",
     "death": "",
@@ -1577,6 +1616,7 @@
   {
     "_id": 69,
     "name": "Drogo",
+    "gender": "male",
     "born": "?",
     "origin": "Vaes Dothrak",
     "death": "298 AC",
@@ -1597,6 +1637,7 @@
   {
     "_id": 70,
     "name": "Daario Naharis",
+    "gender": "male",
     "born": "?",
     "origin": "Tyrosh",
     "death": "",
@@ -1617,6 +1658,7 @@
   {
     "_id": 71,
     "name": "Gendry",
+    "gender": "male",
     "born": "?",
     "origin": "King's Landing",
     "death": "",
@@ -1637,6 +1679,7 @@
   {
     "_id": 72,
     "name": "High Sparrow",
+    "gender": "male",
     "born": "?",
     "origin": "King's Landing",
     "death": "303 AC",
@@ -1657,6 +1700,7 @@
   {
     "_id": 73,
     "name": "Talisa Maegyr",
+    "gender": "female",
     "born": "?",
     "origin": "Volantis",
     "death": "300 AC",
@@ -1677,6 +1721,7 @@
   {
     "_id": 74,
     "name": "The Night King",
+    "gender": "male",
     "born": "~12 000 BC",
     "origin": "Beyond the Wall",
     "death": "",
@@ -1697,6 +1742,7 @@
   {
     "_id": 75,
     "name": "Rhaegar Targaryen",
+    "gender": "male",
     "born": "",
     "origin": "King's Landing",
     "death": "281 AC",
@@ -1717,6 +1763,7 @@
   {
     "_id": 76,
     "name": "Lyanna Mormont",
+    "gender": "female",
     "born": "292 AC",
     "origin": "Bear Island",
     "death": "",
