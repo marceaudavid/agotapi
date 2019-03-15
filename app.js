@@ -21,6 +21,7 @@ app.use(express.json());
 app.use("/api/character", require("./routes/characters"));
 app.use("/api/house", require("./routes/houses"));
 app.use("/api/place", require("./routes/places"));
+app.use("/api/quote", require("./routes/quotes"));
 
 const port =
   typeof argv.port === "number" &&

@@ -1,8 +1,6 @@
 const express = require("express");
 const router = express.Router();
-
 const House = require("../models/house");
-
 const Dao = require("../mongo/dao");
 
 // Get all houses :
@@ -16,7 +14,7 @@ router.get("/", (req, res) => {
 router.get("/:id", (req, res) => {
   Dao.getOneDocument(House, req.params.id)
     .then(house => res.status(200).json(house))
-    .catch(err => res.sendStatus(500));
+    .catch(err => res.sendStatus(500).json({ Error: "Sorry, cant find that" }));
 });
 
 // Add one house :
