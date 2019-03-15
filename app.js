@@ -16,13 +16,14 @@ db.connect((success, err) => {
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static('public'));
 
 // import routes
 app.use("/api/character", require("./routes/characters"));
 app.use("/api/house", require("./routes/houses"));
 app.use("/api/place", require("./routes/places"));
 app.use("/api/quote", require("./routes/quotes"));
-app.use("/api/quote/random", require("./routes/quotes"));
+app.use("/index", express.static('quote.html'));
 
 const port =
   typeof argv.port === "number" &&
