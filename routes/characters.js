@@ -7,7 +7,7 @@ const Dao = require("../mongo/dao");
 
 // Get all characters :
 router.get("/", (req, res) => {
-  Dao.getAllDocument(Character)
+  Dao.getAllDocument(Character, req.queryç)
     .then(character => res.json(character))
     .catch(err => res.sendStatus(500));
 });

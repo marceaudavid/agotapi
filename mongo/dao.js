@@ -1,8 +1,8 @@
 // Get all documents from a collection :
-const getAllDocument = collection => {
+const getAllDocument = (collection, params) => {
   return new Promise((resolve, reject) => {
     collection
-      .find()
+      .find(params)
       .then(item => resolve(item))
       .catch(err => reject(err));
   });

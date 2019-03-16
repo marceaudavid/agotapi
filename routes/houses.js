@@ -7,7 +7,7 @@ const Dao = require("../mongo/dao");
 
 // Get all houses :
 router.get("/", (req, res) => {
-  Dao.getAllDocument(House)
+  Dao.getAllDocument(House, req.query)
     .then(house => res.json(house))
     .catch(err => res.sendStatus(500));
 });

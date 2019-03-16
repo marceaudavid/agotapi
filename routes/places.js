@@ -7,7 +7,7 @@ const Dao = require("../mongo/dao");
 
 // Get all place :
 router.get("/", (req, res) => {
-  Dao.getAllDocument(Place)
+  Dao.getAllDocument(Place, req.query)
     .then(place => res.json(place))
     .catch(err => res.sendStatus(500));
 });
