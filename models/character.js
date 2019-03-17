@@ -11,8 +11,8 @@ const CharacterSchema = new mongoose.Schema(
       required: true
     },
     gender: {
-      type: String
-      // required: true
+      type: String,
+      required: true
     },
     born: {
       type: String

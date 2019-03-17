@@ -17,7 +17,7 @@ const getAllDocument = collection => {
     collection
       .find()
       .then(item => resolve(item))
-      .catch(err => reject(err));
+      .catch(err => reject({ code: 400, err }));
   });
 };
 
@@ -29,11 +29,11 @@ const getOneDocument = (collection, id) => {
         if (id) {
           return collection.findOne({ _id: id });
         } else {
-          reject(404);
+          reject({ code: 404, err: "This id does not exist" });
         }
       })
       .then(item => resolve(item))
-      .catch(err => reject(err));
+      .catch(err => reject({ code: 400, err }));
   });
 };
 
@@ -43,13 +43,13 @@ const addOneDocument = (collection, body) => {
     verifyId(collection, body._id)
       .then(id => {
         if (id) {
-          reject(400);
+          reject({ code: 400, err: "This id is already used" });
         } else {
           return (item = new collection(body).save());
         }
       })
       .then(item => resolve(item))
-      .catch(err => reject(err));
+      .catch(err => reject({ code: 400, err }));
   });
 };
 
@@ -61,11 +61,11 @@ const updateOneDocument = (collection, id, body) => {
         if (id) {
           return collection.updateOne({ _id: id }, body);
         } else {
-          reject(404);
+          reject({ code: 404, err: "This id does not exist" });
         }
       })
       .then(item => resolve(item))
-      .catch(err => reject(err));
+      .catch(err => reject({ code: 400, err }));
   });
 };
 
@@ -77,11 +77,11 @@ const deleteOneDocument = (collection, id) => {
         if (id) {
           return collection.deleteOne({ _id: id });
         } else {
-          reject(404);
+          reject({ code: 404, err: "This id does not exist" });
         }
       })
       .then(item => resolve(item))
-      .catch(err => reject(err));
+      .catch(err => reject({ code: 400, err }));
   });
 };
 

@@ -7,35 +7,35 @@ const Dao = require("../mongo/dao");
 router.get("/", (req, res) => {
   Dao.getAllDocument(House)
     .then(house => res.json(house))
-    .catch(err => res.sendStatus(500));
+    .catch(err => res.status(err.code).json(err.err));
 });
 
 // Get one house :
 router.get("/:id", (req, res) => {
   Dao.getOneDocument(House, req.params.id)
     .then(house => res.status(200).json(house))
-    .catch(err => res.sendStatus(500).json({ Error: "Sorry, cant find that" }));
+    .catch(err => res.status(err.code).json(err.err));
 });
 
 // Add one house :
 router.post("/", (req, res) => {
   Dao.addOneDocument(House, req.body)
     .then(house => res.send(house))
-    .catch(err => res.sendStatus(500));
+    .catch(err => res.status(err.code).json(err.err));
 });
 
 // Update one house :
 router.put("/:id", (req, res) => {
   Dao.updateOneDocument(House, req.params.id, req.body)
     .then(house => res.status(200).json(house))
-    .catch(err => res.sendStatus(500));
+    .catch(err => res.status(err.code).json(err.err));
 });
 
 // Delete one house:
 router.delete("/:id", (req, res) => {
   Dao.deleteOneDocument(House, req.params.id)
     .then(house => res.status(200).json(house))
-    .catch(err => res.sendStatus(500));
+    .catch(err => res.status(err.code).json(err.err));
 });
 
 module.exports = router;
