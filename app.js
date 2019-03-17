@@ -1,3 +1,4 @@
+const path = require("path");
 const yargs = require("yargs");
 const argv = yargs.argv;
 
@@ -16,20 +17,14 @@ db.connect((success, err) => {
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, "public")));
 
 // import routes
 app.use("/api/character", require("./routes/characters"));
 app.use("/api/house", require("./routes/houses"));
 app.use("/api/place", require("./routes/places"));
 app.use("/api/quote", require("./routes/quotes"));
-app.use("/index", express.static('quote.html'));
 
-const port =
-  typeof argv.port === "number" &&
-  Number.isInteger(argv.port) &&
-  (argv.port >= 0 && argv.port <= 65536)
-    ? argv.port
-    : 3000;
+const port = typeof argv.port === "number" && Number.isInteger(argv.port) && (argv.port >= 0 && argv.port <= 65536) ? argv.port : 3000;
 
 app.listen(port, () => console.log(`Listening on Port ${port}!`));
