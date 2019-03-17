@@ -25,8 +25,8 @@ const getAllDocument = (collection, params) => {
 const getOneDocument = (collection, id) => {
   return new Promise((resolve, reject) => {
     verifyId(collection, id)
-      .then(id => {
-        if (id) {
+      .then(res => {
+        if (res) {
           return collection.findOne({ _id: id });
         } else {
           reject({ code: 404, err: "This id does not exist" });
@@ -41,8 +41,8 @@ const getOneDocument = (collection, id) => {
 const addOneDocument = (collection, body) => {
   return new Promise((resolve, reject) => {
     verifyId(collection, body._id)
-      .then(id => {
-        if (id) {
+      .then(res => {
+        if (res) {
           reject({ code: 400, err: "This id is already used" });
         } else {
           return (item = new collection(body).save());
@@ -57,8 +57,8 @@ const addOneDocument = (collection, body) => {
 const updateOneDocument = (collection, id, body) => {
   return new Promise((resolve, reject) => {
     verifyId(collection, id)
-      .then(id => {
-        if (id) {
+      .then(res => {
+        if (res) {
           return collection.updateOne({ _id: id }, body);
         } else {
           reject({ code: 404, err: "This id does not exist" });
@@ -73,12 +73,25 @@ const updateOneDocument = (collection, id, body) => {
 const deleteOneDocument = (collection, id) => {
   return new Promise((resolve, reject) => {
     verifyId(collection, id)
-      .then(id => {
-        if (id) {
+      .then(res => {
+        if (res) {
           return collection.deleteOne({ _id: id });
         } else {
           reject({ code: 404, err: "This id does not exist" });
         }
+      })
+      .then(item => resolve(item))
+      .catch(err => reject({ code: 400, err }));
+  });
+};
+
+const randomDocument = collection => {
+  return new Promise((resolve, reject) => {
+    collection
+      .countDocuments()
+      .then(count => {
+        const random = Math.floor(Math.random() * count) + 1;
+        return getOneDocument(collection, random);
       })
       .then(item => resolve(item))
       .catch(err => reject({ code: 400, err }));
@@ -90,5 +103,6 @@ module.exports = {
   getOneDocument,
   addOneDocument,
   updateOneDocument,
-  deleteOneDocument
+  deleteOneDocument,
+  randomDocument
 };

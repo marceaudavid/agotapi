@@ -15,13 +15,9 @@ router.get("/", (req, res) => {
 
 // Get a random quote :
 router.get("/random", (req, res) => {
-  Quote.countDocuments()
-    .then(count => {
-      const request = Math.floor(Math.random() * count) + 1;
-      return Dao.getOneDocument(Quote, request);
-    })
-    .then(quote => res.status(200).json(quote))
-    .catch(err => res.sendStatus(500));
+  Dao.randomDocument(Quote)
+    .then(quote => res.json(quote))
+    .catch(err => res.status(err.code).json(err.err));
 });
 
 // Random quote view :
