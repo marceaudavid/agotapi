@@ -80,3 +80,23 @@ html {
 #from{
     margin-top:20px;
 }
+
+#getQuoteContainer {
+    font-size: 20px;
+    font-family: "sans";
+    font-weight: 600;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    width: 10%;
+    background-color: white;
+    opacity: 0.7;
+    padding: 15px;
+    border-radius: 15px;
+
+}
+#getQuoteContainer:hover{
+    background-color: #0080ff;
+    color: white;
+    cursor: pointer;
+}
