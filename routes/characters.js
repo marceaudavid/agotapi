@@ -9,35 +9,35 @@ const Dao = require("../mongo/dao");
 router.get("/", (req, res) => {
   Dao.getAllDocument(Character)
     .then(character => res.json(character))
-    .catch(err => res.sendStatus(500));
+    .catch(err => res.sendStatus(err));
 });
 
 // Get one character :
 router.get("/:id", (req, res) => {
   Dao.getOneDocument(Character, req.params.id)
     .then(character => res.json(character))
-    .catch(err => res.sendStatus(500));
+    .catch(err => res.sendStatus(err));
 });
 
 // Add one character :
 router.post("/", (req, res) => {
   Dao.addOneDocument(Character, req.body)
-    .then(character => res.send(character))
-    .catch(err => res.sendStatus(500));
+    .then(character => res.json(character))
+    .catch(err => console.log(err));
 });
 
 // Update one character :
 router.put("/:id", (req, res) => {
   Dao.updateOneDocument(Character, req.params.id, req.body)
-    .then(character => res.status(200).json(character))
-    .catch(err => res.sendStatus(500));
+    .then(character => res.json(character))
+    .catch(err => res.sendStatus(404));
 });
 
 // Delete one character:
 router.delete("/:id", (req, res) => {
   Dao.deleteOneDocument(Character, req.params.id)
     .then(character => res.status(200).json(character))
-    .catch(err => res.sendStatus(500));
+    .catch(err => res.sendStatus(404));
 });
 
 module.exports = router;
