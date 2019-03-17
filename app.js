@@ -1,3 +1,4 @@
+const path = require("path");
 const yargs = require("yargs");
 const argv = yargs.argv;
 
@@ -24,13 +25,13 @@ app.set("json spaces", space);
 // Set up body parsing for json and query params
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static(path.join(__dirname, "public")));
 
 // Import routes
 app.use("/api/character", require("./routes/characters"));
 app.use("/api/house", require("./routes/houses"));
 app.use("/api/place", require("./routes/places"));
 app.use("/api/quote", require("./routes/quotes"));
-app.use("/api/quote/random", require("./routes/quotes"));
 
 // Get the port specified in the port flag (default is 3000)
 const port = typeof argv.port === "number" && Number.isInteger(argv.port) && (argv.port >= 0 && argv.port <= 65536) ? argv.port : 3000;
