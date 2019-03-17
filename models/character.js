@@ -25,7 +25,8 @@ const CharacterSchema = new mongoose.Schema(
       type: String
     },
     status: {
-      type: String
+      type: String,
+      required: true
     },
     culture: {
       type: String,

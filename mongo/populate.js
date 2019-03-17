@@ -1,7 +1,6 @@
 const fs = require("fs");
 
 const db = require("./db");
-const { mongoose } = require("./db");
 
 const Character = require("../models/character");
 const House = require("../models/house");
