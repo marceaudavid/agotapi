@@ -15,6 +15,12 @@ git clone https://github.com/marceaudavid/agotapi.git
 cd agotapi
 ```
 
+Install the dependencies :
+
+```bash
+npm install
+```
+
 And launch the project :
 
 ```bash
@@ -37,7 +43,7 @@ To lauch this project with Docker, make sure Docker is installed and clone this 
 mongoose.connect("mongodb://mongo:27017/api");
 ```
 
-Next you have to build the node.js image :
+Next you have to build the docker images :
 
 ```bash
 docker-compose build
@@ -104,7 +110,7 @@ The character ressources is a set of the most important characters of the show.
 | `name`     | _Number_ | True     | The character's firstname and lastname                                                          |
 | `gender`   | _String_ | True     | The character's gender (male or female)                                                         |
 | `born`     | _String_ | False    | The character's date of birth (BC : Before the Conquest, AC : After the Conquest)               |
-| `origin`   | _String_ | True     | The character's place of birth                                                                  |
+| `origin`   | _String_ | False    | The character's place of birth                                                                  |
 | `death`    | _String_ | False    | The character's date of deatch (null if the character is still alive)                           |
 | `status`   | _String_ | True     | The character's status (alive, deceased or ressurected)                                         |
 | `culture`  | _String_ | True     | The character's culture                                                                         |
@@ -188,6 +194,10 @@ The quote ressources is a set of the best quotes of the show's character.
 | `to`      | _String_ | False    | His interlocutor (null if unknown) |
 | `season`  | _Number_ | True     | The quote's season                 |
 | `episode` | _Number_ | True     | The quote's episode                |
+
+## Test
+
+You can test the request with Insomnia. The `insomnia.json` file already contains all the preconfigured request
 
 ## About
 

@@ -18,8 +18,7 @@ const CharacterSchema = new mongoose.Schema(
       type: String
     },
     origin: {
-      type: String,
-      required: true
+      type: String
     },
     death: {
       type: String

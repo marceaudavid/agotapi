@@ -15,7 +15,7 @@ router.get("/", (req, res) => {
 // Get one place :
 router.get("/:id", (req, res) => {
   Dao.getOneDocument(Place, req.params.id)
-    .then(place => res.status(200).json(place))
+    .then(place => res.json(place))
     .catch(err => res.status(err.code).json(err.err));
 });
 
@@ -29,14 +29,14 @@ router.post("/", (req, res) => {
 // Update one place :
 router.put("/:id", (req, res) => {
   Dao.updateOneDocument(Place, req.params.id, req.body)
-    .then(place => res.status(200).json(place))
+    .then(place => res.json({ status: "updated" }))
     .catch(err => res.status(err.code).json(err.err));
 });
 
 // Delete one place:
 router.delete("/:id", (req, res) => {
   Dao.deleteOneDocument(Place, req.params.id)
-    .then(place => res.status(200).json(place))
+    .then(place => res.json({ status: "deleted" }))
     .catch(err => res.status(err.code).json(err.err));
 });
 

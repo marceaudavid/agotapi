@@ -28,7 +28,7 @@ router.get("/random/view", (req, res) => {
 // Get one quote :
 router.get("/:id", (req, res) => {
   Dao.getOneDocument(Quote, req.params.id)
-    .then(quote => res.status(200).json(quote))
+    .then(quote => res.json(quote))
     .catch(err => res.status(err.code).json(err.err));
 });
 
@@ -42,14 +42,14 @@ router.post("/", (req, res) => {
 // Update one quote :
 router.put("/:id", (req, res) => {
   Dao.updateOneDocument(Quote, req.params.id, req.body)
-    .then(quote => res.status(200).json(quote))
+    .then(quote => res.json({ status: "updated" }))
     .catch(err => res.status(err.code).json(err.err));
 });
 
 // Delete one quote :
 router.delete("/:id", (req, res) => {
   Dao.deleteOneDocument(Quote, req.params.id)
-    .then(quote => res.status(200).json(quote))
+    .then(quote => res.json({ status: "deleted" }))
     .catch(err => res.status(err.code).json(err.err));
 });
 

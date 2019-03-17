@@ -15,7 +15,7 @@ router.get("/", (req, res) => {
 // Get one house :
 router.get("/:id", (req, res) => {
   Dao.getOneDocument(House, req.params.id)
-    .then(house => res.status(200).json(house))
+    .then(house => res.json(house))
     .catch(err => res.status(err.code).json(err.err));
 });
 
@@ -29,14 +29,14 @@ router.post("/", (req, res) => {
 // Update one house :
 router.put("/:id", (req, res) => {
   Dao.updateOneDocument(House, req.params.id, req.body)
-    .then(house => res.status(200).json(house))
+    .then(house => res.json({ status: "updated" }))
     .catch(err => res.status(err.code).json(err.err));
 });
 
 // Delete one house:
 router.delete("/:id", (req, res) => {
   Dao.deleteOneDocument(House, req.params.id)
-    .then(house => res.status(200).json(house))
+    .then(house => res.json({ status: "deleted" }))
     .catch(err => res.status(err.code).json(err.err));
 });
 
