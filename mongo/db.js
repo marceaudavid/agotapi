@@ -2,14 +2,9 @@ const mongoose = require("mongoose");
 
 const connect = callback => {
   mongoose.Promise = global.Promise;
+  const uri = process.env.DATABASE_URL || "mongodb://mongo:27017/api";
   mongoose
-    .connect(
-      /* Atlas Url : */
-      "mongodb+srv://admin:root@sandbox-3mubc.mongodb.net/api?retryWrites=true",
-      /* Docker Url : */
-      /* "mongodb://mongo:27017/api" */
-      { useNewUrlParser: true }
-    )
+    .connect(uri, { useNewUrlParser: true })
     .then(() => callback("Database Connected"))
     .catch(() => callback(null, "Connection Failed"));
 };

@@ -34,7 +34,8 @@ app.use("/api/place", require("./routes/places"));
 app.use("/api/quote", require("./routes/quotes"));
 
 // Get the port specified in the port flag (default is 3000)
-const port = typeof argv.port === "number" && Number.isInteger(argv.port) && (argv.port >= 0 && argv.port <= 65536) ? argv.port : 3000;
+const def = process.env.PORT || 3000;
+const port = typeof argv.port === "number" && Number.isInteger(argv.port) && (argv.port >= 0 && argv.port <= 65536) ? argv.port : def;
 
 // Launch the express server
 app.listen(port, () => console.log(`Running on http://localhost:${port}`));
