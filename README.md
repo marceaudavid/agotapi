@@ -65,7 +65,7 @@ This API allow `GET`, `POST`, `PUT` and `DELETE` request.
 
 Let's start by performing a `GET` request on one particular ressource :
 
-`http://localhost:3000/api/place/1`
+`https://agotapi.herokuapp.com/api/place/1`
 
 Here is the response :
 
@@ -83,11 +83,11 @@ Here is the response :
 
 You can filter the set of ressources returned with query parameters :
 
-`http://localhost:3000/api/place/?type=Castle`
+`https://agotapi.herokuapp.com/api/place/?type=Castle`
 
 Muliples paramaters are also supported :
 
-`http://localhost:3000/api/place/?type=Castle&name=Highgarden`
+`https://agotapi.herokuapp.com/api/place/?type=Castle&name=Highgarden`
 
 ## Ressources
 
@@ -95,7 +95,7 @@ Muliples paramaters are also supported :
 
 The character ressources is a set of the most important characters of the show.
 
-**URL :** `http://localhost:3000/api/character`
+**URL :** `https://agotapi.herokuapp.com/api/character`
 
 | URI endpoints        | Methods allowed        | Description                                                        |
 | -------------------- | ---------------------- | ------------------------------------------------------------------ |
@@ -130,7 +130,7 @@ The character ressources is a set of the most important characters of the show.
 
 The house ressources is a set of the most well-known houses of the game of thrones universe.
 
-**URL :** `http://localhost:3000/api/house`
+**URL :** `https://agotapi.herokuapp.com/api/house`
 
 | URI endpoints    | Methods allowed        | Description                                                    |
 | ---------------- | ---------------------- | -------------------------------------------------------------- |
@@ -154,7 +154,7 @@ The house ressources is a set of the most well-known houses of the game of thron
 
 The place ressources is a set of the most well-known places of the game of thrones world.
 
-**URL :** `http://localhost:3000/api/place`
+**URL :** `https://agotapi.herokuapp.com/api/place`
 
 | URI endpoints    | Methods allowed        | Description                                                    |
 | ---------------- | ---------------------- | -------------------------------------------------------------- |
@@ -175,7 +175,7 @@ The place ressources is a set of the most well-known places of the game of thron
 
 The quote ressources is a set of the best quotes of the show's character.
 
-**URL :** `http://localhost:3000/api/quote`
+**URL :** `https://agotapi.herokuapp.com/api/quote`
 
 | URI endpoints           | Methods allowed        | Description                                                    |
 | ----------------------- | ---------------------- | -------------------------------------------------------------- |
