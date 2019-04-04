@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
-    "ejs": "^2.6.1",
+    "cors": "^2.8.5",
     "express": "^4.16.4",
     "mongoose": "^5.4.19",
     "yargs": "^13.2.2"
@@ -13,7 +13,7 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "pop": "node mongo/populate.js"
+    "seed": "node mongo/seed.js"
   },
   "repository": {
     "type": "git",

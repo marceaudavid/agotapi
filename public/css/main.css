@@ -133,49 +133,115 @@ html {
   height: 100%;
 }
 
-.global-container {
-  background-image: url("../images/wallpaper.jpg");
+.container {
   height: 100%;
   width: 100%;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/wallpaper.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: fixed;
 }
 
-.quote-container {
+.blockquote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto 100px auto;
+  background-color: #f1eddc;
+  text-align: center;
+  opacity: 0.5;
+  border-radius: 5px;
+}
+
+.form {
+  width: 740px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
+}
+
+#quote {
+  max-width: 740px;
   font-size: 20px;
   font-family: "sans";
   font-weight: 600;
-  margin: auto;
-  margin-top: 400px;
-  width: 25%;
-  text-align: center;
-  background-color: white;
-  opacity: 0.7;
   padding: 15px;
-  border-radius: 15px;
-}
-#from {
-  margin-top: 20px;
 }
 
-#getQuoteContainer {
-  font-size: 20px;
+#author {
+  max-width: 740px;
+  font-size: 16px;
   font-family: "sans";
   font-weight: 600;
-  margin: auto;
-  margin-top: 100px;
-  text-align: center;
-  width: 10%;
-  background-color: white;
-  opacity: 0.7;
   padding: 15px;
-  border-radius: 15px;
 }
-#getQuoteContainer:hover {
-  background-color: #0080ff;
-  color: white;
+
+#url {
+  height: 25px;
+  font-size: 20px;
+  font-family: "sans";
+  font-weight: 900;
+  margin: 0px 2px;
+  text-align: center;
+  background-color: #f1eddc;
+  opacity: 0.5;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+#input {
+  height: 25px;
+  font-size: 20px;
+  font-family: "sans";
+  font-weight: 900;
+  margin: 0px 2px;
+  background-color: #f1eddc;
+  opacity: 0.5;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+.code {
+  padding: 15px;
+  font-family: "sans";
+  min-width: 600px;
+  min-height: 400px;
+  max-width: 600px;
+  max-height: 400px;
+  overflow-y: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
+  background-color: #f1eddc;
+  opacity: 0.5;
+}
+
+#button {
+  font-size: 20px;
+  font-family: "sans";
+  font-weight: 900;
+  margin: 0px 2px;
+  text-align: center;
+  background-color: #f1eddc;
+  opacity: 0.5;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+#button:hover {
+  opacity: 0.8;
   cursor: pointer;
 }

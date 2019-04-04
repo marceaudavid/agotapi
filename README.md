@@ -32,7 +32,7 @@ This command take two flags, port and prettify, port is used to defined the port
 If the database is empty you can populate it with the command below :
 
 ```bash
-npm run pop
+npm run seed
 ```
 
 ### Docker

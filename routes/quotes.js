@@ -1,4 +1,3 @@
-const path = require("path");
 const express = require("express");
 const router = express.Router();
 
@@ -18,11 +17,6 @@ router.get("/random", (req, res) => {
   Dao.randomDocument(Quote)
     .then(quote => res.json(quote))
     .catch(err => res.status(err.code).json(err.err));
-});
-
-// Random quote view :
-router.get("/random/view", (req, res) => {
-  res.sendFile(path.join(`${__dirname}"/../public/html/quote.html`));
 });
 
 // Get one quote :

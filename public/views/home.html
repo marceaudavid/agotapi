@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Agotapi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="form">
+        <p id="url">https://agotapi.herokuapp.com</p>
+        <input id="input" type="text" placeholder="/api/characters/1" />
+        <button id="button">Rechercher</button>
+      </div>
+      <div class="code">
+        <pre>
+        <code id="code"></code>
+        </pre>
+      </div>
+    </div>
+    <script>
+      const getRessource = uri => {
+        fetch(uri)
+          .then(response => {
+            return response.json();
+          })
+          .then(data => {
+            console.log(data);
+            document.getElementById("code").innerHTML = JSON.stringify(data, null, 10);
+          })
+          .catch(err => {
+            console.log(err);
+          });
+      };
+
+      const btn = document.getElementById("button");
+
+      btn.addEventListener("click", () => {
+        const input = document.getElementById("input").value;
+        getRessource(input);
+      });
+    </script>
+  </body>
+</html>

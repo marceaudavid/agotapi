@@ -3,6 +3,7 @@ const yargs = require("yargs");
 const argv = yargs.argv;
 
 const express = require("express");
+const cors = require("cors");
 const app = express();
 
 const db = require("./mongo/db");
@@ -22,12 +23,18 @@ const space = typeof argv.prettify === "number" && Number.isInteger(argv.prettif
 // Prettifying json
 app.set("json spaces", space);
 
+// Enable CORS policy
+app.use(cors());
+
 // Set up body parsing for json and query params
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+// Serve static files
 app.use(express.static(path.join(__dirname, "public")));
 
 // Import routes
+app.use("/", require("./routes/views"));
 app.use("/api/character", require("./routes/characters"));
 app.use("/api/house", require("./routes/houses"));
 app.use("/api/place", require("./routes/places"));
